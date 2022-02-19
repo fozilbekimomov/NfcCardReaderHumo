@@ -13,17 +13,19 @@ def getVersionName = { ->
 }
 
 def getArtificatId = { ->
-    return "creditCardNfcReader" // Replace with library name ID
+//    return "credit-card-nfc-reader" // Replace with library name ID
+    return "nfc-card-reader" // Replace with library name ID
 }
 
 publishing {
     publications {
         bar(MavenPublication) {
-            groupId 'uz.android.nfc-card-reader' // Replace with group ID
+            groupId 'uz.android.nfc' // Replace with group ID
             artifactId getArtificatId()
             version getVersionName()
             artifact("$buildDir/outputs/aar/${getArtificatId()}-release.aar")
         }
+
     }
     repositories {
         maven {
