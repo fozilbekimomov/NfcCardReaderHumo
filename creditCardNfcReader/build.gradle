@@ -13,7 +13,7 @@ def getVersionName = { ->
 }
 
 def getArtificatId = { ->
-    return "nfc-card-reader" // Replace with library name ID
+    return "creditCardNfcReader" // Replace with library name ID
 }
 
 publishing {
